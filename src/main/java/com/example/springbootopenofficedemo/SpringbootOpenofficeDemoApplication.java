@@ -10,12 +10,12 @@ import java.io.*;
 @SpringBootApplication
 public class SpringbootOpenofficeDemoApplication implements CommandLineRunner {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringbootOpenofficeDemoApplication.class, args);
-	}
-
     private static final String EXCEL_FILE = "/data/FinancialSample.xlsx";
     private static final String PDF_FILE = "/data/FinancialSample.pdf";
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootOpenofficeDemoApplication.class, args);
+    }
 
     @Override
     public void run(String... args) throws Exception {
